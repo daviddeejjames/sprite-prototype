@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: purple;
+  background-color: white;
   display: flex;
   min-height: 100vh;
   width: 100%;
@@ -14,8 +14,8 @@ body {
   background-image: url(images/background.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0 0;
-  width: 100%;
+  background-position: bottom left;
+  width: 1920px;
   height: 100vh;
 }
 
