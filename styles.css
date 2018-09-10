@@ -1,3 +1,6 @@
+/*
+ * CSS styling for prototype
+ */
 body {
   margin: 0;
   padding: 0;
@@ -5,28 +8,33 @@ body {
   background-color: white;
   display: flex;
   min-height: 100vh;
-  width: 100%;
   overflow: scroll;
+  position: relative;
 }
 
 .background {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url(images/background.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
-  width: 1920px;
-  height: 100vh;
+  width: 1333px;
+  height: 768px;
+  cursor: default;
+  user-select: none;
 }
 
 .bookmark {
-  transform: scale(0.31);
+  transform: scale(0.35);
   position: absolute;
-  bottom: -38px;
-  left: 190px;
-  width: 384px;
+  bottom: -24px;
+  left: 256px;
+  width: 385px;
   height: 225px;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-image: url(images/sprite.png);
+  cursor: pointer;
 }
