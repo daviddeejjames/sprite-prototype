@@ -14,9 +14,9 @@ function animatingBookmark(){
   if(!body.hasClass('animating-sprite')) {
     body.addClass('animating-sprite');
 
-    let iterationCounter = 1;
-    const yHeight = 225;
-    const xWidth = 385;
+    let iterationCounter = 0;
+    const yHeight = 339;
+    const xWidth = 540;
 
     let xCounter = 0;
     let yCounter = 0;
@@ -26,21 +26,22 @@ function animatingBookmark(){
         "background-position",
         (- xCounter * xWidth) + "px " + (- yCounter * yHeight) + "px");
 
+      xCounter++;
       iterationCounter++;
       console.log({iterationCounter});
 
-      if (iterationCounter % 5 === 1) {
+      if (iterationCounter % 3 === 1) {
         yCounter++;
         xCounter = 0;
       }
 
-      if (iterationCounter === 18) {
+      if (iterationCounter === 16) {
         iterationCounter = 0;
         xCounter = 0;
         yCounter = 0;
       }
 
-    }, 18);
+    }, 32);
   }
 }
 
