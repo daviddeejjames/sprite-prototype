@@ -27,10 +27,10 @@ body {
 }
 
 .bookmark {
-  transform: scale(0.35);
+  transform: scale(0.25);
   position: absolute;
-  bottom: -24px;
-  left: 256px;
+  bottom: -84px;
+  left: 178px;
   width: 540px;
   height: 339px;
   background-position: 0 0;
