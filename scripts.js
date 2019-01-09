@@ -56,13 +56,15 @@ function stopAnimatingBookmark() {
 }
 
 function toggleHamburger() {
-  let isOpen = nav.hasClass('is-open');
+  let isOpen = hamburger.hasClass('is-open');
 
   if (isOpen) {
     nav.removeClass('is-open');
+    hamburger.removeClass('is-open');
   }
   else {
     nav.addClass('is-open');
+    hamburger.addClass('is-open');
   }
 }
 

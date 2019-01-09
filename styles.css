@@ -17,13 +17,23 @@ a {
 }
 
 .hamburger-icon {
-  background-color: red;
+  background-image: url(images/site/hamburger.svg);
+  background-size: contain;
+  background-color: transparent;
+  border: none;
   position: absolute;
   top: 50px;
   right: 50px;
   width: 60px;
   height: 60px;
   z-index: 10;
+}
+
+.hamburger-icon.is-open {
+  background-image: url(images/site/close.svg);
+  background-size: contain;
+  background-color: transparent;
+  border: none;
 }
 
 nav {
