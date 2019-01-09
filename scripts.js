@@ -5,6 +5,8 @@
 // Dirty Globals
 let bookmarkAnimation;
 
+const hamburger = jQuery('.hamburger-icon');
+const nav = jQuery('nav');
 const bookmark = jQuery('.bookmark');
 const body = jQuery('body');
 
@@ -53,11 +55,24 @@ function stopAnimatingBookmark() {
   clearInterval(bookmarkAnimation);
 }
 
+function toggleHamburger() {
+  let isOpen = nav.hasClass('is-open');
+
+  if (isOpen) {
+    nav.removeClass('is-open');
+  }
+  else {
+    nav.addClass('is-open');
+  }
+}
+
 function init() {
   console.log('Init bruh');
 
   bookmark.on('mouseenter', () => animatingBookmark());
   bookmark.on('mouseleave', () => stopAnimatingBookmark());
+
+  hamburger.on('click', () => toggleHamburger());
 }
 
 // jQuery main loop
