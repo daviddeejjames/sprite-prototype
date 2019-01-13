@@ -3,56 +3,56 @@
 //
 
 // Dirty Globals
-let bookmarkAnimation;
+let spriteIntervalAnimation;
 
 const hamburger = jQuery('.hamburger-icon');
 const nav = jQuery('nav');
-const bookmark = jQuery('.bookmark');
 const body = jQuery('body');
 
-function animatingBookmark(){
-  console.log('we hovered the bookmark');
+function animatingSprite(){
+  const singleSprite = jQuery(this);
+  const spriteWidth = singleSprite.width();
+  const spriteHeight = singleSprite.height();
+  const spriteRows = singleSprite.attr('data-sprite-rows');
+  const spriteLength = singleSprite.attr('data-sprite-length');
 
-  if(!body.hasClass('animating-sprite')) {
+  if (!body.hasClass('animating-sprite') && spriteWidth && spriteHeight && spriteRows && spriteLength ) {
     body.addClass('animating-sprite');
 
     let iterationCounter = 0;
-    const yHeight = 339;
-    const xWidth = 540;
 
     let xCounter = 0;
     let yCounter = 0;
-    bookmarkAnimation = setInterval(function () {
+    spriteIntervalAnimation = setInterval(function () {
 
-      bookmark.css(
+      singleSprite.css(
         "background-position",
-        (- xCounter * xWidth) + "px " + (- yCounter * yHeight) + "px");
+        (- xCounter * spriteWidth) + "px " + (- yCounter * spriteHeight) + "px");
 
       xCounter++;
       iterationCounter++;
       console.log({iterationCounter});
 
-      if (iterationCounter % 3 === 1) {
+      if (iterationCounter % spriteRows === 1) {
         yCounter++;
         xCounter = 0;
       }
 
-      if (iterationCounter === 16) {
+      if (iterationCounter === (spriteLength / 2 )) {
         iterationCounter = 0;
         xCounter = 0;
         yCounter = 0;
       }
 
-    }, 32);
+    }, spriteLength);
   }
 }
 
-function stopAnimatingBookmark() {
-  console.log('leave the bookmark alone');
+function stopAnimatingSprite() {
   body.removeClass('animating-sprite');
-  bookmark.css(
+  jQuery(this).css(
     "background-position", "0px 0px");
-  clearInterval(bookmarkAnimation);
+  clearInterval(spriteIntervalAnimation);
 }
 
 function toggleHamburger() {
@@ -69,10 +69,17 @@ function toggleHamburger() {
 }
 
 function init() {
-  console.log('Init bruh');
 
-  bookmark.on('mouseenter', () => animatingBookmark());
-  bookmark.on('mouseleave', () => stopAnimatingBookmark());
+  let spriteNum = 0; // Initialize our sprite ID variable
+
+  jQuery('.sprite').each(function () {
+    thisSprite = jQuery(this);
+    thisSprite.attr('data-sprite', spriteNum);
+    thisSprite.on('mouseenter', () => animatingSprite());
+    thisSprite.on('mouseleave', () => stopAnimatingSprite());
+    spriteNum++;
+  });
+
 
   hamburger.on('click', () => toggleHamburger());
 }

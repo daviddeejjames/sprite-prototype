@@ -77,15 +77,18 @@ nav ul li {
   user-select: none;
 }
 
-.bookmark {
-  transform: scale(0.25);
+.sprite {
+  display: block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.blue-bookmark {
   position: absolute;
   bottom: -84px;
   left: 178px;
   width: 540px;
   height: 339px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
   background-image: url(images/sprite.png);
   cursor: pointer;
 }
