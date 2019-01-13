@@ -5,7 +5,7 @@
 // Dirty Globals
 let spriteIntervalAnimation;
 
-const hamburger = jQuery('.hamburger-icon');
+const hamburger = jQuery('.hamburger');
 const nav = jQuery('nav');
 const body = jQuery('body');
 
@@ -60,10 +60,12 @@ function toggleHamburger() {
 
   if (isOpen) {
     nav.removeClass('is-open');
+    navBackground.removeClass('is-open');
     hamburger.removeClass('is-open');
   }
   else {
     nav.addClass('is-open');
+    navBackground.addClass('is-open');
     hamburger.addClass('is-open');
   }
 }
