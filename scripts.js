@@ -9,16 +9,19 @@ const hamburger = jQuery('.hamburger');
 const nav = jQuery('nav');
 const body = jQuery('body');
 
-function animatingSprite(){
-  const singleSprite = jQuery(this);
+function animatingSprite(event){
+  const singleSprite = jQuery(event.target);
+
+  // Set in CSS
   const spriteWidth = singleSprite.width();
   const spriteHeight = singleSprite.height();
-  const spriteRows = singleSprite.attr('data-sprite-rows');
-  const spriteLength = singleSprite.attr('data-sprite-length');
+
+  // Set in HTML
+  const spriteRows = parseInt(singleSprite.attr('data-sprite-rows'));
+  const spriteLength = parseInt(singleSprite.attr('data-sprite-length'));
 
   if (!body.hasClass('animating-sprite') && spriteWidth && spriteHeight && spriteRows && spriteLength ) {
     body.addClass('animating-sprite');
-
     let iterationCounter = 0;
 
     let xCounter = 0;
@@ -33,18 +36,19 @@ function animatingSprite(){
       iterationCounter++;
       console.log({iterationCounter});
 
-      if (iterationCounter % spriteRows === 1) {
+      // If multi-row sprite, go onto the subsequent rows
+      if (iterationCounter % spriteRows === 1 && spriteRows > 1) {
         yCounter++;
         xCounter = 0;
       }
 
-      if (iterationCounter === (spriteLength / 2 )) {
+      if (iterationCounter === (spriteLength)) {
         iterationCounter = 0;
         xCounter = 0;
         yCounter = 0;
       }
 
-    }, spriteLength);
+    }, 60);
   }
 }
 
@@ -77,11 +81,10 @@ function init() {
   jQuery('.sprite').each(function () {
     thisSprite = jQuery(this);
     thisSprite.attr('data-sprite', spriteNum);
-    thisSprite.on('mouseenter', () => animatingSprite());
+    thisSprite.on('mouseenter', () => animatingSprite(event));
     thisSprite.on('mouseleave', () => stopAnimatingSprite());
     spriteNum++;
   });
-
 
   hamburger.on('click', () => toggleHamburger());
 }

@@ -127,3 +127,13 @@ nav ul li a:hover {
   background-image: url(images/sprite.png);
   cursor: pointer;
 }
+
+.bird {
+  position: absolute;
+  top: 282px;
+  left: 387px;
+  width: 120px;
+  height: 200px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A11_120x200_V01.png);
+  cursor: pointer;
+}
