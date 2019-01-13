@@ -2,6 +2,7 @@
  * CSS styling for prototype
  */
 body {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,17 +18,23 @@ a {
   text-decoration: none;
 }
 
+.hamburger {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+}
+
 .hamburger-icon {
   background-image: url(images/hamburger.svg);
   background-size: contain;
   background-color: transparent;
+  outline: none;
   border: none;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  width: 60px;
-  height: 60px;
-  z-index: 10;
+  width: 40px;
+  height: 40px;
 }
 
 .hamburger-icon.is-open {
@@ -37,18 +44,37 @@ a {
   border: none;
 }
 
+#hamburger-icon-label {
+  padding-right: 20px;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
 nav {
   display: none;
 }
 
 nav.is-open {
   display: flex;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.nav-background {
+  display: none;
   z-index: 5;
   width: 100%;
-  background-color: green;
-  opacity: 0.5;
+  background-color: black;
+  opacity: 0.75;
+}
+
+.nav-background.is-open {
+  display: block;
 }
 
 nav ul {
@@ -59,6 +85,15 @@ nav ul {
 
 nav ul li {
   margin: 15px 0 15px 0;
+  font-size: 50px;
+}
+
+nav ul li a {
+  color: white;
+}
+
+nav ul li a:hover {
+  color: palevioletred;
 }
 
 .background {
