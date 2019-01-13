@@ -54,7 +54,7 @@ function animatingSprite(event){
 
 function stopAnimatingSprite() {
   body.removeClass('animating-sprite');
-  jQuery(this).css(
+  jQuery(event.target).css(
     "background-position", "0px 0px");
   clearInterval(spriteIntervalAnimation);
 }
@@ -81,8 +81,8 @@ function init() {
   jQuery('.sprite').each(function () {
     thisSprite = jQuery(this);
     thisSprite.attr('data-sprite', spriteNum);
-    thisSprite.on('mouseenter', () => animatingSprite(event));
-    thisSprite.on('mouseleave', () => stopAnimatingSprite());
+    thisSprite.on('mouseenter', event => animatingSprite(event));
+    thisSprite.on('mouseleave', event => stopAnimatingSprite(event));
     spriteNum++;
   });
 
