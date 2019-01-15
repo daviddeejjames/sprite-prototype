@@ -143,8 +143,8 @@ nav ul li a:hover {
 
 .balloon {
   position: absolute;
-  top: 250px;
-  left: 232px;
+  top: 58px;
+  right: 107px;
   width: 160px;
   height: 200px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A08_160x200_V01.png);
