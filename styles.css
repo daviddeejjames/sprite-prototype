@@ -121,6 +121,16 @@ nav ul li a:hover {
   background-repeat: no-repeat;
 }
 
+.green-bookmark {
+  position: absolute;
+  bottom: 96px;
+  left: 294px;
+  width: 100px;
+  height: 100px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A21_100x100_V01.png);
+  cursor: pointer;
+}
+
 .blue-bookmark {
   position: absolute;
   bottom: -84px;
