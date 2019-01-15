@@ -102,6 +102,7 @@ nav ul li {
 
 nav ul li a {
   color: white;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
