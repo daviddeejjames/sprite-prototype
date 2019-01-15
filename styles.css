@@ -301,3 +301,33 @@ nav ul li a:hover {
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A23_100x60_V01.png);
   cursor: pointer;
 }
+
+.yellow-bookmark {
+  position: absolute;
+  bottom: 36px;
+  right: 298px;
+  width: 100px;
+  height: 80px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A24_100x80_V01.png);
+  cursor: pointer;
+}
+
+.red-rope {
+  position: absolute;
+  bottom: 23px;
+  right: 235px;
+  width: 60px;
+  height: 60px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A25_60x60_V01.png);
+  cursor: pointer;
+}
+
+.blue-tab {
+  position: absolute;
+  bottom: 19px;
+  right: 92px;
+  width: 120px;
+  height: 60px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A26_120x60_V01.png);
+  cursor: pointer;
+}
