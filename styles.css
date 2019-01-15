@@ -121,6 +121,26 @@ nav ul li a:hover {
   background-repeat: no-repeat;
 }
 
+.fireworks {
+  position: absolute;
+  top: 250px;
+  left: 232px;
+  width: 160px;
+  height: 200px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A10_160x200_V01.png);
+  cursor: pointer;
+}
+
+.bird {
+  position: absolute;
+  top: 282px;
+  left: 387px;
+  width: 120px;
+  height: 200px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A11_120x200_V01.png);
+  cursor: pointer;
+}
+
 .green-bookmark {
   position: absolute;
   bottom: 96px;
@@ -138,15 +158,5 @@ nav ul li a:hover {
   width: 540px;
   height: 339px;
   background-image: url(images/sprite.png);
-  cursor: pointer;
-}
-
-.bird {
-  position: absolute;
-  top: 282px;
-  left: 387px;
-  width: 120px;
-  height: 200px;
-  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A11_120x200_V01.png);
   cursor: pointer;
 }
