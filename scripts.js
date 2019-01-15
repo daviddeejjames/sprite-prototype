@@ -23,31 +23,33 @@ function animatingSprite(event){
   if (!body.hasClass('animating-sprite') && spriteWidth && spriteHeight && spriteRows && spriteLength ) {
     body.addClass('animating-sprite');
     let iterationCounter = 0;
+    let spritesPerRow = spriteLength / spriteRows;
 
     let xCounter = 0;
     let yCounter = 0;
     spriteIntervalAnimation = setInterval(function () {
-
       singleSprite.css(
         "background-position",
-        (- xCounter * spriteWidth) + "px " + (- yCounter * spriteHeight) + "px");
+        (- xCounter * spriteWidth) + "px " + (- yCounter * spriteHeight) + "px"
+      );
 
       xCounter++;
       iterationCounter++;
-      console.log({iterationCounter});
 
       // If multi-row sprite, go onto the subsequent rows
-      if (iterationCounter % spriteRows === 1 && spriteRows > 1) {
+      if (iterationCounter % spritesPerRow === 0 && spriteRows > 1) {
         yCounter++;
         xCounter = 0;
       }
 
-      if (iterationCounter === (spriteLength)) {
+      console.log({xCounter, yCounter, iterationCounter});
+
+      // Last sprite has been reached; restart
+      if (iterationCounter === spriteLength) {
         iterationCounter = 0;
         xCounter = 0;
         yCounter = 0;
       }
-
     }, 60);
   }
 }
@@ -64,12 +66,10 @@ function toggleHamburger() {
 
   if (isOpen) {
     nav.removeClass('is-open');
-    navBackground.removeClass('is-open');
     hamburger.removeClass('is-open');
   }
   else {
     nav.addClass('is-open');
-    navBackground.addClass('is-open');
     hamburger.addClass('is-open');
   }
 }
