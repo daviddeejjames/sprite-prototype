@@ -244,7 +244,7 @@ nav ul li a:hover {
 
 .looseleaf {
   position: absolute;
-  bottom: 111px;
+  bottom: 61px;
   left: 0;
   width: 340px;
   height: 100px;
@@ -254,7 +254,7 @@ nav ul li a:hover {
 
 .red-bookmark {
   position: absolute;
-  bottom: 56px;
+  bottom: 5px;
   left: 72px;
   width: 100px;
   height: 40px;
@@ -264,7 +264,7 @@ nav ul li a:hover {
 
 .green-bookmark {
   position: absolute;
-  bottom: 40px;
+  bottom: -11px;
   left: 294px;
   width: 100px;
   height: 100px;
@@ -274,7 +274,7 @@ nav ul li a:hover {
 
 .blue-bookmark {
   position: absolute;
-  bottom: 55px;
+  bottom: 4px;
   left: 616px;
   width: 200px;
   height: 120px;
@@ -284,7 +284,7 @@ nav ul li a:hover {
 
 .orange-bookmark {
   position: absolute;
-  bottom: 136px;
+  bottom: 85px;
   left: 902px;
   width: 200px;
   height: 80px;
@@ -294,7 +294,7 @@ nav ul li a:hover {
 
 .ribbon {
   position: absolute;
-  bottom: 59px;
+  bottom: 9px;
   left: 1043px;
   width: 100px;
   height: 60px;
