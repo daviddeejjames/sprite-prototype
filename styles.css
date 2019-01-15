@@ -163,10 +163,10 @@ nav ul li a:hover {
 
 .blue-bookmark {
   position: absolute;
-  bottom: -84px;
-  left: 178px;
-  width: 540px;
-  height: 339px;
-  background-image: url(images/sprite.png);
+  bottom: 55px;
+  left: 616px;
+  width: 200px;
+  height: 120px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A19_200x120_V05.png);
   cursor: pointer;
 }
