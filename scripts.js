@@ -64,12 +64,10 @@ function toggleHamburger() {
 
   if (isOpen) {
     nav.removeClass('is-open');
-    navBackground.removeClass('is-open');
     hamburger.removeClass('is-open');
   }
   else {
     nav.addClass('is-open');
-    navBackground.addClass('is-open');
     hamburger.addClass('is-open');
   }
 }

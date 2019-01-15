@@ -26,9 +26,10 @@ a {
   z-index: 99;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
-.hamburger-icon {
+.hamburger .hamburger-icon {
   background-image: url(images/hamburger.svg);
   background-size: contain;
   background-color: transparent;
@@ -36,9 +37,10 @@ a {
   border: none;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
-.hamburger-icon.is-open {
+.hamburger.is-open .hamburger-icon {
   background-image: url(images/close.svg);
   background-size: contain;
   background-color: transparent;
@@ -50,6 +52,7 @@ a {
   color: white;
   font-size: 22px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 nav {
