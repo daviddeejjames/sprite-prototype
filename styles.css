@@ -141,6 +141,16 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.balloon {
+  position: absolute;
+  top: 250px;
+  left: 232px;
+  width: 160px;
+  height: 200px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A08_160x200_V01.png);
+  cursor: pointer;
+}
+
 .green-bookmark {
   position: absolute;
   bottom: 96px;
