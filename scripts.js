@@ -76,7 +76,8 @@ function toggleHamburger() {
 
 function toggleMute() {
   const audioPlayer = jQuery('#audio-player');
-  audioPlayer.toggleClass('muted');
+  jQuery('#audio-player').toggleClass('muted');
+  jQuery('.mute-button').toggleClass('muted');
   audioPlayer[0].muted = !audioPlayer[0].muted;
 }
 
