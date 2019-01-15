@@ -56,7 +56,7 @@ function animatingSprite(event){
 
 function stopAnimatingSprite() {
   body.removeClass('animating-sprite');
-  jQuery(this).css(
+  jQuery(event.target).css(
     "background-position", "0px 0px");
   clearInterval(spriteIntervalAnimation);
 }
@@ -74,6 +74,12 @@ function toggleHamburger() {
   }
 }
 
+function toggleMute() {
+  const audioPlayer = jQuery('#audio-player');
+  audioPlayer.toggleClass('muted');
+  audioPlayer[0].muted = !audioPlayer[0].muted;
+}
+
 function init() {
 
   let spriteNum = 0; // Initialize our sprite ID variable
@@ -81,13 +87,20 @@ function init() {
   jQuery('.sprite').each(function () {
     thisSprite = jQuery(this);
     thisSprite.attr('data-sprite', spriteNum);
-    thisSprite.on('mouseenter', () => animatingSprite(event));
-    thisSprite.on('mouseleave', () => stopAnimatingSprite());
+    thisSprite.on('mouseenter', event => animatingSprite(event));
+    thisSprite.on('mouseleave', event => stopAnimatingSprite(event));
     spriteNum++;
   });
 
   hamburger.on('click', () => toggleHamburger());
 }
+
+
+// Load page event
+jQuery(window).on("load", function() {
+  jQuery('body').addClass('page-loaded');
+  jQuery('.loading-screen').fadeOut(400);
+});
 
 // jQuery main loop
 jQuery(document).ready(function(){
