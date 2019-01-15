@@ -242,9 +242,29 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.looseleaf {
+  position: absolute;
+  bottom: 61px;
+  left: 0;
+  width: 340px;
+  height: 100px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A18_340x100_V01.png);
+  cursor: pointer;
+}
+
+.red-bookmark {
+  position: absolute;
+  bottom: 5px;
+  left: 72px;
+  width: 100px;
+  height: 40px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A22_100x40_V01.png);
+  cursor: pointer;
+}
+
 .green-bookmark {
   position: absolute;
-  bottom: 40px;
+  bottom: -11px;
   left: 294px;
   width: 100px;
   height: 100px;
@@ -254,10 +274,60 @@ nav ul li a:hover {
 
 .blue-bookmark {
   position: absolute;
-  bottom: 55px;
+  bottom: 4px;
   left: 616px;
   width: 200px;
   height: 120px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A19_200x120_V05.png);
+  cursor: pointer;
+}
+
+.orange-bookmark {
+  position: absolute;
+  bottom: 85px;
+  left: 902px;
+  width: 200px;
+  height: 80px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A20_200x80_V01.png);
+  cursor: pointer;
+}
+
+.ribbon {
+  position: absolute;
+  bottom: 9px;
+  left: 1043px;
+  width: 100px;
+  height: 60px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A23_100x60_V01.png);
+  cursor: pointer;
+}
+
+.yellow-bookmark {
+  position: absolute;
+  bottom: 36px;
+  right: 298px;
+  width: 100px;
+  height: 80px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A24_100x80_V01.png);
+  cursor: pointer;
+}
+
+.red-rope {
+  position: absolute;
+  bottom: 23px;
+  right: 235px;
+  width: 60px;
+  height: 60px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A25_60x60_V01.png);
+  cursor: pointer;
+}
+
+.blue-tab {
+  position: absolute;
+  bottom: 19px;
+  right: 92px;
+  width: 120px;
+  height: 60px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A26_120x60_V01.png);
   cursor: pointer;
 }
