@@ -74,6 +74,12 @@ function toggleHamburger() {
   }
 }
 
+function toggleMute() {
+  const audioPlayer = jQuery('#audio-player');
+  audioPlayer.toggleClass('muted');
+  audioPlayer[0].muted = !audioPlayer[0].muted;
+}
+
 function init() {
 
   let spriteNum = 0; // Initialize our sprite ID variable
@@ -88,6 +94,13 @@ function init() {
 
   hamburger.on('click', () => toggleHamburger());
 }
+
+
+// Load page event
+jQuery(window).on("load", function() {
+  jQuery('body').addClass('page-loaded');
+  jQuery('.loading-screen').fadeOut(400);
+});
 
 // jQuery main loop
 jQuery(document).ready(function(){
