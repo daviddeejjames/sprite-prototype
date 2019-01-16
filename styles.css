@@ -273,6 +273,29 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.kookaburra {
+  position: absolute;
+  top: 210px;
+  right: 431px;
+  width: 40px;
+  height: 40px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A12_40x40_V01.png);
+  cursor: pointer;
+}
+
+.plane {
+  position: absolute;
+  top: 392px;
+  right: 138px;
+  width: 280px;
+  height: 120px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A16_280x120_V01.png);
+  cursor: pointer;
+}
+
+/*************/
+/* Bookmarks */
+/*************/
 .looseleaf {
   position: absolute;
   top: 786px;
