@@ -241,147 +241,121 @@ nav ul li a:hover {
   display: block;
   background-position: 0 0;
   background-repeat: no-repeat;
+  position: absolute;
+  cursor: pointer;
 }
 
 .fireworks {
-  position: absolute;
   top: 250px;
   left: 232px;
   width: 160px;
   height: 200px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A10_160x200_V01.png);
-  cursor: pointer;
 }
 
 .bird {
-  position: absolute;
   top: 282px;
   left: 387px;
   width: 120px;
   height: 200px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A11_120x200_V01.png);
-  cursor: pointer;
 }
 
 .balloon {
-  position: absolute;
   top: 58px;
   right: 107px;
   width: 160px;
   height: 200px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A08_160x200_V01.png);
-  cursor: pointer;
 }
 
 .kookaburra {
-  position: absolute;
   top: 210px;
   right: 431px;
   width: 40px;
   height: 40px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A12_40x40_V01.png);
-  cursor: pointer;
 }
 
 .plane {
-  position: absolute;
   top: 392px;
   right: 138px;
   width: 280px;
   height: 120px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A16_280x120_V01.png);
-  cursor: pointer;
 }
 
 /*************/
 /* Bookmarks */
 /*************/
 .looseleaf {
-  position: absolute;
   top: 786px;
   left: 0;
   width: 340px;
   height: 100px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A18_340x100_V01.png);
-  cursor: pointer;
 }
 
 .red-bookmark {
-  position: absolute;
   top: 902px;
   left: 72px;
   width: 100px;
   height: 40px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A22_100x40_V01.png);
-  cursor: pointer;
 }
 
 .green-bookmark {
-  position: absolute;
   top: 858px;
   left: 294px;
   width: 100px;
   height: 100px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A21_100x100_V01.png);
-  cursor: pointer;
 }
 
 .blue-bookmark {
-  position: absolute;
   top: 823px;
   left: 616px;
   width: 200px;
   height: 120px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A19_200x120_V05.png);
-  cursor: pointer;
 }
 
 .orange-bookmark {
-  position: absolute;
   top: 782px;
   left: 902px;
   width: 200px;
   height: 80px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A20_200x80_V01.png);
-  cursor: pointer;
 }
 
 .ribbon {
-  position: absolute;
   top: 879px;
   left: 1043px;
   width: 100px;
   height: 60px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A23_100x60_V01.png);
-  cursor: pointer;
 }
 
 .yellow-bookmark {
-  position: absolute;
   top: 830px;
   right: 298px;
   width: 100px;
   height: 80px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A24_100x80_V01.png);
-  cursor: pointer;
 }
 
 .red-rope {
-  position: absolute;
   top: 863px;
   right: 235px;
   width: 60px;
   height: 60px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A25_60x60_V01.png);
-  cursor: pointer;
 }
 
 .blue-tab {
-  position: absolute;
   bottom: 19px;
   right: 92px;
   width: 120px;
   height: 60px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/A26_120by60.png);
-  cursor: pointer;
 }
