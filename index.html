@@ -30,13 +30,11 @@
     </div>
     <div class="main-landscape background">
       <div class="audio-wrapper">
-        <audio id="audio-player" preload="none" loop autoplay>
-          <source src="https://s3-ap-southeast-2.amazonaws.com/dev-sprites/richardWebsiteMusic.mp3" type="audio/mpeg">
-          Your browser does not support the
-          <code>audio</code> element.
+        <audio id="audio-player" loop muted>
+          <source src="https://s3-ap-southeast-2.amazonaws.com/dev-sprites/sounds.mp3">
         </audio>
         <button
-          class="mute-button"
+          class="mute-button muted"
           onclick="toggleMute()">
           <i class="fas fa-volume-up"></i>
           <i class="fas fa-volume-mute"></i>
@@ -50,12 +48,8 @@
       <div class="kookaburra sprite" data-sprite-rows="1" data-sprite-length="20"></div>
       <div class="plane sprite" data-sprite-rows="1" data-sprite-length="19"></div>
       <!-- Midground -->
-      <div class="mailbox-letter sprite" data-sprite-rows="1" data-sprite-length="50"></div>
       <div class="people sprite" data-sprite-rows="1" data-sprite-length="28"></div>
-      <div class="drippy-roof sprite" data-sprite-rows="1" data-sprite-length="24"></div>
       <div class="candy-cane static"></div>
-      <div class="clocktower sprite" data-sprite-rows="1" data-sprite-length="48"></div>
-      <div class="bonfire sprite" data-sprite-rows="1" data-sprite-length="18"></div>
       <div class="bottle-top static"></div>
       <!-- Bookmarks -->
       <div class="looseleaf sprite" data-sprite-rows="1" data-sprite-length="13"></div>
