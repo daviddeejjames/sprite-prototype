@@ -286,6 +286,17 @@ nav ul li a:hover {
 }
 
 /*************/
+/* Midground */
+/*************/
+.people {
+  top: 584px;
+  left: 90px;
+  width: 60px;
+  height: 80px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A02_60x80_V01.png);
+}
+
+/*************/
 /* Bookmarks */
 /*************/
 .looseleaf {
