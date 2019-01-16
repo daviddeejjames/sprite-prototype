@@ -4,6 +4,7 @@
 
 // Dirty Globals
 let spriteIntervalAnimation;
+let context;
 
 const hamburger = jQuery('.hamburger');
 const nav = jQuery('nav');
@@ -77,17 +78,20 @@ function toggleHamburger() {
 function toggleMute() {
   let audioElem = document.getElementById('audio-player');
   jQuery('.mute-button').toggleClass('muted');
-  audioElem.muted = !audioElem.muted;
-}
+  if(audioElem.muted) {
+    context.resume().then(() => {
+      console.log('Playback resumed successfully');
+    });
+  }
 
-async function playAudio() {
-  let audioElem = document.getElementById('audio-player');
   try {
     console.log('trying to play it');
-    await audioElem.play();
+    audioElem.play();
   } catch (err) {
     console.log('No music, sorry about that!')
   }
+
+  audioElem.muted = !audioElem.muted;
 }
 
 function init() {
@@ -110,22 +114,7 @@ function init() {
 jQuery(window).on("load", function() {
   jQuery('body').addClass('page-loaded');
   jQuery('.loading-screen').fadeOut(400);
-
-  setTimeout(function () {
-    const audioPromise = jQuery('#audio-player')[0].play();
-
-    if (audioPromise !== undefined) {
-      audioPromise.then(_ => {
-        // Automatic playback started!
-        // Show playing UI.
-      })
-      .catch(error => {
-        // Auto-play was prevented
-        // Show paused UI.
-        console.error('Sorry the audio isnt working');
-      });
-    }
-  }, 1000);
+  context = new AudioContext();
 });
 
 // jQuery main loop
@@ -133,3 +122,22 @@ jQuery(document).ready(function(){
   init();
 });
 
+// Scroll horizontzzz
+(function () {
+  function scrollHorizontally(e) {
+    e = window.event || e;
+    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    document.documentElement.scrollLeft -= (delta * 40); // Multiplied by 40
+    document.body.scrollLeft -= (delta * 40); // Multiplied by 40
+    e.preventDefault();
+  }
+  if (window.addEventListener) {
+    // IE9, Chrome, Safari, Opera
+    window.addEventListener("mousewheel", scrollHorizontally, false);
+    // Firefox
+    window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+  } else {
+    // IE 6/7/8
+    window.attachEvent("onmousewheel", scrollHorizontally);
+  }
+})();
