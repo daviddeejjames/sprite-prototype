@@ -1,0 +1,23 @@
+{
+  "name": "2019sprite-prototype",
+  "version": "1.0.0",
+  "description": "Prototype that uses sprite-sheet animations",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch styles.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviddeejjames/sprite-prototype.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daviddeejjames/sprite-prototype/issues"
+  },
+  "homepage": "https://github.com/daviddeejjames/sprite-prototype#readme",
+  "dependencies": {
+    "sass": "^1.16.0"
+  }
+}

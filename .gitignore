@@ -2,3 +2,5 @@
 *.log
 *.zip
 *.env
+node_modules/
+styles.css.map

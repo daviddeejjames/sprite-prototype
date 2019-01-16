@@ -1,6 +1,7 @@
 /*
  * CSS styling for prototype
  */
+
 :root {
   --primary: palevioletred;
   --white: #fff;
@@ -18,9 +19,10 @@ body {
   overflow-y: hidden;
   overflow-x: scroll;
   position: relative;
-}
-body a {
-  text-decoration: none;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .hamburger {
@@ -32,19 +34,23 @@ body a {
   display: flex;
   align-items: center;
   cursor: pointer;
-}
-.hamburger .hamburger-icon {
-  background-image: url(images/hamburger.svg);
-  background-size: contain;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-.hamburger.is-open .hamburger-icon {
-  background-image: url(images/close.svg);
+
+  .hamburger-icon {
+    background-image: url(images/hamburger.svg);
+    background-size: contain;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &.is-open {
+    .hamburger-icon {
+      background-image: url(images/close.svg);
+    }
+  }
 }
 
 #hamburger-icon-label {
@@ -57,42 +63,48 @@ body a {
 
 nav {
   display: none;
-}
-nav::before {
-  content: "";
-  width: 100%;
-  background-color: var(--black);
-  opacity: 0.75;
-  display: block;
-  position: absolute;
-  height: 100%;
-}
-nav.is-open {
-  display: flex;
-  position: fixed;
-  will-change: transform;
-  z-index: 10;
-  width: 100vw;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-nav ul {
-  position: relative;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-nav ul li {
-  margin: 15px 0 15px 0;
-  font-size: 50px;
-}
-nav ul li a {
-  color: white;
-  transition: color 0.3s;
-}
-nav ul li a:hover {
-  color: var(--primary);
+
+  &::before {
+    content: "";
+    width: 100%;
+    background-color: var(--black);
+    opacity: 0.75;
+    display: block;
+    position: absolute;
+    height: 100%;
+  }
+
+  &.is-open {
+    display: flex;
+    position: fixed;
+    will-change: transform;
+    z-index: 10;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 15px 0 15px 0;
+      font-size: 50px;
+
+      a {
+        color: white;
+        transition: color 0.3s;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
 }
 
 .loading-screen {
@@ -127,19 +139,20 @@ nav ul li a:hover {
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-}
-.loader::after {
-  background-color: #fff;
-  width: 75%;
-  height: 75%;
-  border-radius: 50%;
-  content: "";
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+
+  &::after {
+    background-color: #fff;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 @-webkit-keyframes load3 {
@@ -162,6 +175,7 @@ nav ul li a:hover {
     transform: rotate(360deg);
   }
 }
+
 #audio-player {
   display: none;
 }
@@ -178,20 +192,26 @@ nav ul li a:hover {
   background-color: transparent;
   cursor: pointer;
   outline: none;
-}
-.mute-button svg {
-  width: 35px !important;
-  height: 35px !important;
-  color: var(--black);
-}
-.mute-button .fa-volume-mute {
-  display: none;
-}
-.mute-button.muted .fa-volume-up {
-  display: none;
-}
-.mute-button.muted .fa-volume-mute {
-  display: block;
+
+  svg {
+    width: 35px !important;
+    height: 35px !important;
+    color: var(--black);
+  }
+
+  .fa-volume-mute {
+    display: none;
+  }
+
+  &.muted {
+    .fa-volume-up {
+      display: none;
+    }
+
+    .fa-volume-mute {
+      display: block;
+    }
+  }
 }
 
 .loading-text {
@@ -232,9 +252,10 @@ nav ul li a:hover {
   left: 126px;
   width: 160px;
   height: 120px;
-}
-.luna-park:hover {
-  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A09_160x120_V01.png);
+
+  &:hover {
+    background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A09_160x120_V01.png);
+  }
 }
 
 .fireworks {
@@ -309,9 +330,10 @@ nav ul li a:hover {
   right: 504px;
   width: 40px;
   height: 60px;
-}
-.candy-cane:hover {
-  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A13_40x60_V01.png);
+
+  &:hover {
+    background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A13_40x60_V01.png);
+  }
 }
 
 .clocktower {
@@ -335,9 +357,10 @@ nav ul li a:hover {
   right: 102px;
   width: 40px;
   height: 40px;
-}
-.bottle-top:hover {
-  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A17_40x40_V01.png);
+
+  &:hover {
+    background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A17_40x40_V01.png);
+  }
 }
 
 /*************/
@@ -408,11 +431,10 @@ nav ul li a:hover {
 }
 
 .blue-tab {
+  // TODO: Change this to top
   bottom: 19px;
   right: 92px;
   width: 120px;
   height: 60px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/A26_120by60.png);
 }
-
-/*# sourceMappingURL=styles.css.map */
