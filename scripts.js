@@ -110,6 +110,22 @@ function init() {
 jQuery(window).on("load", function() {
   jQuery('body').addClass('page-loaded');
   jQuery('.loading-screen').fadeOut(400);
+
+  setTimeout(function () {
+    const audioPromise = jQuery('#audio-player')[0].play();
+
+    if (audioPromise !== undefined) {
+      audioPromise.then(_ => {
+        // Automatic playback started!
+        // Show playing UI.
+      })
+      .catch(error => {
+        // Auto-play was prevented
+        // Show paused UI.
+        console.error('Sorry the audio isnt working');
+      });
+    }
+  }, 1000);
 });
 
 // jQuery main loop
