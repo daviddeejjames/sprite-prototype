@@ -75,10 +75,18 @@ function toggleHamburger() {
 }
 
 function toggleMute() {
-  const audioPlayer = jQuery('#audio-player');
-  jQuery('#audio-player').toggleClass('muted');
+  let audioElem = document.getElementById('audio-player');
   jQuery('.mute-button').toggleClass('muted');
-  audioPlayer[0].muted = !audioPlayer[0].muted;
+  audioElem.muted = !audioElem.muted;
+}
+
+async function playAudio() {
+  let audioElem = document.getElementById('audio-player');
+  try {
+    await audioElem.play();
+  } catch (err) {
+    console.log('No music, sorry about that!')
+  }
 }
 
 function init() {
@@ -101,6 +109,7 @@ function init() {
 jQuery(window).on("load", function() {
   jQuery('body').addClass('page-loaded');
   jQuery('.loading-screen').fadeOut(400);
+  playAudio();
 });
 
 // jQuery main loop
