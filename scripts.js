@@ -83,6 +83,7 @@ function toggleMute() {
 async function playAudio() {
   let audioElem = document.getElementById('audio-player');
   try {
+    console.log('trying to play it');
     await audioElem.play();
   } catch (err) {
     console.log('No music, sorry about that!')
@@ -109,7 +110,6 @@ function init() {
 jQuery(window).on("load", function() {
   jQuery('body').addClass('page-loaded');
   jQuery('.loading-screen').fadeOut(400);
-  playAudio();
 });
 
 // jQuery main loop
