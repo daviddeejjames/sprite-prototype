@@ -246,6 +246,17 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.luna-park {
+  top: 329px;
+  left: 126px;
+  width: 160px;
+  height: 120px;
+}
+
+.luna-park:hover {
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A09_160x120_V01.png);
+}
+
 .fireworks {
   top: 250px;
   left: 232px;
@@ -295,6 +306,17 @@ nav ul li a:hover {
   width: 60px;
   height: 80px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A02_60x80_V01.png);
+}
+
+.candy-cane {
+  top: 395px;
+  right: 504px;
+  width: 40px;
+  height: 60px;
+}
+
+.candy-cane:hover {
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A13_40x60_V01.png);
 }
 
 .bottle-top {
