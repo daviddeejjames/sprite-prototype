@@ -94,6 +94,10 @@ function toggleMute() {
   audioElem.muted = !audioElem.muted;
 }
 
+function moveSceneUpwards(){
+  console.log('DO SOMETHING HERE');
+}
+
 function init() {
 
   let spriteNum = 0; // Initialize our sprite ID variable
@@ -107,14 +111,20 @@ function init() {
   });
 
   hamburger.on('click', () => toggleHamburger());
-}
 
+  moveSceneUpwards();
+}
 
 // Load page event
 jQuery(window).on("load", function() {
   jQuery('body').addClass('page-loaded');
   jQuery('.loading-screen').fadeOut(400);
   context = new AudioContext();
+});
+
+// jQuery reszie loop
+jQuery(window).resize(function () {
+  moveSceneUpwards();
 });
 
 // jQuery main loop
