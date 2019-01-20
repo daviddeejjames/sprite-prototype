@@ -248,7 +248,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/background.jpg);
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/background-no-sprites.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -190px;
@@ -339,8 +339,8 @@ nav {
 }
 
 .drippy-roof {
-  top: 476px;
-  left: 385px;
+  top: 408px;
+  left: 969px;
   width: 50px;
   height: 160px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A27_50x160_V01.png);
