@@ -51,7 +51,7 @@ function animatingSprite(event){
         xCounter = 0;
         yCounter = 0;
       }
-    }, 60);
+    }, 40);
   }
 }
 
