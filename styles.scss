@@ -364,7 +364,7 @@ nav {
   height: 60px;
 
   &:hover {
-    background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A13_40x60_V01.png);
+    background-image: url('images/RP_A13_40x60_V01.png');
   }
 }
 
@@ -381,7 +381,7 @@ nav {
   right: 304px;
   width: 120px;
   height: 140px;
-  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A15_120x140_V01.png);
+  background-image: url('images/RP_A15_120x140_V01.png');
 }
 
 .bottle-top {
