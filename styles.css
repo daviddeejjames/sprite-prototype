@@ -268,7 +268,17 @@ nav ul li a:hover {
   left: 387px;
   width: 120px;
   height: 200px;
-  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A11_120x200_V01.png);
+  background-image: url("images/RP_A11_120x200_V01.png");
+}
+
+.lumpy-tower {
+  top: 348px;
+  left: 381px;
+  width: 120px;
+  height: 200px;
+}
+.lumpy-tower:hover {
+  background-image: url("images/RP_A11_120x200_V01_glow.png");
 }
 
 .balloon {
