@@ -282,6 +282,14 @@ nav ul li a:hover {
   color: var(--primary);
 }
 
+.house-button {
+  top: 340px;
+  left: 674px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .luna-park {
   top: 329px;
   left: 126px;
