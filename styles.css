@@ -361,14 +361,6 @@ nav ul li a:hover {
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A02_60x80_V01.png);
 }
 
-.house-button {
-  top: 332px;
-  left: 698px;
-  width: 300px;
-  height: 300px;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 .drippy-roof {
   top: 408px;
   left: 969px;
