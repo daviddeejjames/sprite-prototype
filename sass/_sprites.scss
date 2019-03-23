@@ -25,6 +25,17 @@
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A11_120x200_V01.png);
 }
 
+.lumpy-tower {
+  top: 348px;
+  left: 381px;
+  width: 120px;
+  height: 200px;
+
+  &:hover {
+    background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A11_120x200_V01_glow.png);
+  }
+}
+
 .balloon {
   top: 58px;
   right: 107px;
@@ -66,14 +77,6 @@
   width: 60px;
   height: 80px;
   background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A02_60x80_V01.png);
-}
-
-.house-button {
-  top: 332px;
-  left: 698px;
-  width: 300px;
-  height: 300px;
-  background-color: rgba(#000, 0.2);
 }
 
 .drippy-roof {
