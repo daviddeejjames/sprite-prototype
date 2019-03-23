@@ -1,0 +1,198 @@
+.luna-park {
+  top: 329px;
+  left: 126px;
+  width: 160px;
+  height: 120px;
+
+  &:hover {
+    background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A09_160x120_V01.png);
+  }
+}
+
+.fireworks {
+  top: 250px;
+  left: 232px;
+  width: 160px;
+  height: 200px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A10_160x200_V01.png);
+}
+
+.bird {
+  top: 282px;
+  left: 387px;
+  width: 120px;
+  height: 200px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A11_120x200_V01.png);
+}
+
+.balloon {
+  top: 58px;
+  right: 107px;
+  width: 160px;
+  height: 200px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A08_160x200_V01.png);
+}
+
+.kookaburra {
+  top: 210px;
+  right: 431px;
+  width: 40px;
+  height: 40px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A12_40x40_V01.png);
+}
+
+.plane {
+  top: 331px;
+  right: 10px;
+  width: 280px;
+  height: 120px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A16_280x120_V01.png);
+}
+
+/*************/
+/* Midground */
+/*************/
+.mailbox-letter {
+  top: 602px;
+  left: 23px;
+  width: 120px;
+  height: 120px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A01_120x120_V02.png);
+}
+
+.people {
+  top: 584px;
+  left: 90px;
+  width: 60px;
+  height: 80px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A02_60x80_V01.png);
+}
+
+.house-button {
+  top: 332px;
+  left: 698px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(#000, 0.2);
+}
+
+.drippy-roof {
+  top: 408px;
+  left: 969px;
+  width: 50px;
+  height: 160px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A27_50x160_V01.png);
+}
+
+.candy-cane {
+  top: 395px;
+  right: 504px;
+  width: 40px;
+  height: 60px;
+
+  &:hover {
+    background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A13_40x60_V01.png);
+  }
+}
+
+.clocktower {
+  top: 511px;
+  right: 395px;
+  width: 60px;
+  height: 120px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A14_60x120_V01.png);
+}
+
+.bonfire {
+  top: 293px;
+  right: 304px;
+  width: 120px;
+  height: 140px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A15_120x140_V01.png);
+}
+
+.bottle-top {
+  top: 367px;
+  right: 102px;
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A17_40x40_V01.png);
+  }
+}
+
+/*************/
+/* Bookmarks */
+/*************/
+.looseleaf {
+  top: 786px;
+  left: 0;
+  width: 340px;
+  height: 100px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A18_340x100_V01.png);
+}
+
+.red-bookmark {
+  top: 902px;
+  left: 72px;
+  width: 100px;
+  height: 40px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A22_100x40_V01.png);
+}
+
+.green-bookmark {
+  top: 858px;
+  left: 294px;
+  width: 100px;
+  height: 100px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A21_100x100_V01.png);
+}
+
+.blue-bookmark {
+  top: 823px;
+  left: 616px;
+  width: 200px;
+  height: 120px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A19_200x120_V05.png);
+}
+
+.orange-bookmark {
+  top: 782px;
+  left: 902px;
+  width: 200px;
+  height: 80px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A20_200x80_V01.png);
+}
+
+.ribbon {
+  top: 879px;
+  left: 1043px;
+  width: 100px;
+  height: 60px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A23_100x60_V01.png);
+}
+
+.yellow-bookmark {
+  top: 830px;
+  right: 298px;
+  width: 100px;
+  height: 80px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A24_100x80_V01.png);
+}
+
+.red-rope {
+  top: 863px;
+  right: 235px;
+  width: 60px;
+  height: 60px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A25_60x60_V01.png);
+}
+
+.blue-tab {
+  top: 866px;
+  right: 92px;
+  width: 120px;
+  height: 60px;
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/A26_120by60.png);
+}

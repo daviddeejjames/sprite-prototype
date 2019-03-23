@@ -1,0 +1,41 @@
+// Note that the house modal levearge the nav
+// so CSS here is just for the features inside the house modal
+
+.house-modal {
+  display: none;
+
+  .open-house & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .house-interior {
+    display: block;
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/house_interior_edited.png);
+  }
+
+  .back-button {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}

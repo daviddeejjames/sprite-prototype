@@ -1,0 +1,95 @@
+.hamburger {
+  position: fixed;
+  will-change: transform;
+  top: 40px;
+  right: 40px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .hamburger-icon {
+    background-image: url(images/hamburger.svg);
+    background-size: contain;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &.is-open {
+    .hamburger-icon {
+      background-image: url(images/close.svg);
+    }
+  }
+}
+
+#hamburger-icon-label {
+  padding-right: 20px;
+  color: var(--white);
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+
+  // Modal background
+  &::before {
+    content: "";
+    width: 100%;
+    background-color: rgba(#000, 0.75);
+    display: block;
+    position: absolute;
+    height: 100%;
+  }
+
+  &.is-open {
+    display: flex;
+    position: fixed;
+    will-change: transform;
+    z-index: 10;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: fadeIn 0.4s;
+    animation: fadeIn 0.4s;
+  }
+
+  &.open-house {
+    // House modal has slightly more transparent bg
+    &::before {
+      background-color: rgba(#000, 0.6);
+    }
+
+    // Hide menu for house modal
+    ul {
+      display: none;
+    }
+  }
+
+  ul {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 15px 0 15px 0;
+      font-size: 50px;
+
+      a {
+        color: white;
+        transition: color 0.3s;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}

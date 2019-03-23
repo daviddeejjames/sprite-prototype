@@ -64,6 +64,7 @@ function stopAnimatingSprite() {
 
 function toggleHamburger() {
   let isOpen = hamburger.hasClass('is-open');
+  nav.removeClass('open-house'); // Hamburgers are better than houses
 
   if (isOpen) {
     nav.removeClass('is-open');
@@ -72,6 +73,17 @@ function toggleHamburger() {
   else {
     nav.addClass('is-open');
     hamburger.addClass('is-open');
+  }
+}
+
+function toggleHouseModal() {
+  let isOpen = nav.hasClass('is-open');
+
+  if (isOpen) {
+    nav.removeClass('open-house').removeClass('is-open');
+  }
+  else {
+    nav.addClass('open-house').addClass('is-open');
   }
 }
 
@@ -112,6 +124,12 @@ function init() {
 
   hamburger.on('click', () => toggleHamburger());
 
+  const house = jQuery('.house-button');
+  const houseExit = jQuery('.house-modal .back-button')
+  house.on('click', () => toggleHouseModal());
+  houseExit.on('click', () => toggleHouseModal());
+
+  //TODO: Move the scene upwards on small screens
   moveSceneUpwards();
 }
 
