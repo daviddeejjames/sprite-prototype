@@ -264,7 +264,7 @@ nav ul li a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/house_interior_edited.png);
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/house_interior_edited_min.png);
 }
 .house-modal .back-button {
   margin-top: 20px;
@@ -281,8 +281,7 @@ nav ul li a:hover {
 .house-modal .back-button:hover {
   color: var(--primary);
 }
-
-.house-button {
+.house-modal .house-button {
   top: 362px;
   left: 635px;
   width: 422px;
@@ -290,21 +289,21 @@ nav ul li a:hover {
   opacity: 0;
   transition: 0.3s opacity;
 }
-.house-button:before {
+.house-modal .house-button:before {
   position: relative;
   content: "";
-  background-image: url("images/magnifying-glass.svg");
+  background-image: url(images/magnifying-glass.svg);
   width: 90px;
   height: 90px;
   left: 175px;
   top: 80px;
 }
-.house-button:hover {
-  background-image: url("images/house_interior_edited_min_dark.png");
+.house-modal .house-button:hover {
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/house_interior_edited_min_dark.png);
   background-size: contain;
   opacity: 1;
 }
-.house-button:hover:before {
+.house-modal .house-button:hover:before {
   display: block;
 }
 

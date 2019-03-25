@@ -1,32 +1,3 @@
-.house-button {
-  top: 362px;
-  left: 635px;
-  width: 422px;
-  height: 220px;
-  opacity: 0;
-  transition: 0.3s opacity;
-
-  &:before {
-    position: relative;
-    content: "";
-    background-image: url('images/magnifying-glass.svg');
-    width: 90px;
-    height: 90px;
-    left: 175px;
-    top: 80px;
-  }
-
-  &:hover {
-    &:before {
-      display: block;
-    }
-
-    background-image: url('images/house_interior_edited_min_dark.png');
-    background-size: contain;
-    opacity: 1;
-  }
-}
-
 .luna-park {
   top: 329px;
   left: 126px;
