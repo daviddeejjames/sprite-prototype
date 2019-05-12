@@ -43,8 +43,6 @@ function animatingSprite(event){
         xCounter = 0;
       }
 
-      console.log({xCounter, yCounter, iterationCounter});
-
       // Last sprite has been reached; restart
       if (iterationCounter === spriteLength) {
         iterationCounter = 0;
@@ -97,7 +95,6 @@ function toggleMute() {
   }
 
   try {
-    console.log('trying to play it');
     audioElem.play();
   } catch (err) {
     console.log('No music, sorry about that!')
@@ -107,7 +104,7 @@ function toggleMute() {
 }
 
 function moveSceneUpwards(){
-  console.log('DO SOMETHING HERE');
+  // DO SOMETHING HERE
 }
 
 function init() {
