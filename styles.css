@@ -284,6 +284,33 @@ nav ul li a:hover {
 .house-modal .house-interior .house-pizza-hut-roof:hover {
   background-image: url("images/RP_A04_980x140.png");
 }
+.house-modal .house-interior .house-bottom-left {
+  top: 261px;
+  left: 11px;
+  width: 320px;
+  height: 210px;
+}
+.house-modal .house-interior .house-bottom-left:hover {
+  background-image: url("images/RP_A05_320x210.png");
+}
+.house-modal .house-interior .house-bottom-middle {
+  top: 261px;
+  left: 318px;
+  width: 340px;
+  height: 210px;
+}
+.house-modal .house-interior .house-bottom-middle:hover {
+  background-image: url("images/RP_A06_340x210.png");
+}
+.house-modal .house-interior .house-bottom-right {
+  top: 261px;
+  left: 644px;
+  width: 340px;
+  height: 210px;
+}
+.house-modal .house-interior .house-bottom-right:hover {
+  background-image: url("images/RP_A07_340x210.png");
+}
 .house-modal .back-button {
   margin-top: 20px;
   border: none;
