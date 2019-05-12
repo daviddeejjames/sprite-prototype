@@ -311,14 +311,14 @@ nav ul li a:hover {
 .house-button:before {
   position: relative;
   content: "";
-  background-image: url("images/magnifying-glass.svg");
+  background-image: url(images/magnifying-glass.svg);
   width: 90px;
   height: 90px;
   left: 175px;
   top: 80px;
 }
 .house-button:hover {
-  background-image: url("images/house_interior_edited_min_dark.png");
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/house_interior_edited_min_dark.png);
   background-size: contain;
   opacity: 1;
 }
