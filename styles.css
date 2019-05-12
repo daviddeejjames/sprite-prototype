@@ -264,7 +264,7 @@ nav ul li a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("images/house_interior_final.png");
+  background-image: url("https://s3-ap-southeast-2.amazonaws.com/dev-sprites/house_interior_final.png");
 }
 .house-modal .house-interior .house-attic {
   top: 13px;
@@ -273,7 +273,7 @@ nav ul li a:hover {
   height: 130px;
 }
 .house-modal .house-interior .house-attic:hover {
-  background-image: url("images/RP_A03_330x130.png");
+  background-image: url("https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A03_330x130.png");
 }
 .house-modal .house-interior .house-pizza-hut-roof {
   top: 137px;
@@ -282,7 +282,7 @@ nav ul li a:hover {
   height: 140px;
 }
 .house-modal .house-interior .house-pizza-hut-roof:hover {
-  background-image: url("images/RP_A04_980x140.png");
+  background-image: url("https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A04_980x140.png");
 }
 .house-modal .house-interior .house-bottom-left {
   top: 261px;
@@ -291,7 +291,7 @@ nav ul li a:hover {
   height: 210px;
 }
 .house-modal .house-interior .house-bottom-left:hover {
-  background-image: url("images/RP_A05_320x210.png");
+  background-image: url("https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A05_320x210.png");
 }
 .house-modal .house-interior .house-bottom-middle {
   top: 261px;
@@ -300,7 +300,7 @@ nav ul li a:hover {
   height: 210px;
 }
 .house-modal .house-interior .house-bottom-middle:hover {
-  background-image: url("images/RP_A06_340x210.png");
+  background-image: url("https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A06_340x210.png");
 }
 .house-modal .house-interior .house-bottom-right {
   top: 261px;
@@ -309,7 +309,7 @@ nav ul li a:hover {
   height: 210px;
 }
 .house-modal .house-interior .house-bottom-right:hover {
-  background-image: url("images/RP_A07_340x210.png");
+  background-image: url("https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A07_340x210.png");
 }
 .house-modal .back-button {
   margin-top: 20px;
