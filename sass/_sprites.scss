@@ -109,6 +109,7 @@
 }
 
 .drippy-roof {
+  z-index: 2; // Needs to be in front of house 'button' that pops open modal
   top: 408px;
   left: 969px;
   width: 50px;
