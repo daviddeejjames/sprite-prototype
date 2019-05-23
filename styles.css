@@ -433,6 +433,7 @@ nav ul li a:hover {
 }
 
 .drippy-roof {
+  z-index: 2;
   top: 408px;
   left: 969px;
   width: 50px;
