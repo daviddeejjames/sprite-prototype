@@ -8,6 +8,10 @@
   align-items: center;
   cursor: pointer;
 
+  .show-disclaimer & {
+    top: 55px;
+  }
+
   .hamburger-icon {
     background-image: url(images/hamburger.svg);
     background-size: contain;
@@ -39,7 +43,7 @@ nav {
 
   // Modal background
   &::before {
-    content: "";
+    content: '';
     width: 100%;
     background-color: rgba(#000, 0.75);
     display: block;
@@ -72,22 +76,54 @@ nav {
     }
   }
 
-  ul {
+  // Top level menu
+  .main-menu {
     position: relative;
     list-style-type: none;
     padding: 0;
     margin: 0;
 
-    li {
-      margin: 15px 0 15px 0;
-      font-size: 50px;
+    > li {
+      position: relative;
+      margin: 18px 0;
+      font-size: 30px;
+      letter-spacing: 1px;
 
+      &.with-children {
+
+        .toggle {
+          position: relative;
+          top: -1px;
+          color: var(--white);
+          padding-left: 20px;
+          cursor: pointer;
+        }
+      }
+
+      // All links
       a {
         color: white;
         transition: color 0.3s;
 
         &:hover {
           color: var(--primary);
+        }
+      }
+    }
+    // Submenu
+    .inner-dropdown {
+      margin: 0;
+      padding: 0;
+      display: none;
+
+      li {
+        margin: 10px 0;
+        font-size: 26px;
+        letter-spacing: 1px;
+
+        > a::before {
+          content: '-';
+          padding-right: 8px;
         }
       }
     }

@@ -20,6 +20,11 @@ body a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .loading-screen {
   position: fixed;
   z-index: 9999;
@@ -32,14 +37,34 @@ body a {
   height: 100vh;
   background-color: var(--white);
 }
-
-.loading-text {
+.loading-screen .loading-text {
   position: relative;
   color: var(--primary);
   font-weight: 300;
   font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 0;
+}
+
+.disclaimer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 5%;
+  background-color: var(--black);
+  z-index: 20;
+}
+.show-disclaimer .disclaimer {
+  display: flex;
+}
+.disclaimer .disclaimer-text {
+  color: var(--white);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 #audio-player {
@@ -58,6 +83,9 @@ body a {
   background-color: transparent;
   cursor: pointer;
   outline: none;
+}
+.show-disclaimer .mute-button {
+  top: 55px;
 }
 .mute-button svg {
   width: 35px !important;
@@ -178,6 +206,9 @@ body a {
   align-items: center;
   cursor: pointer;
 }
+.show-disclaimer .hamburger {
+  top: 55px;
+}
 .hamburger .hamburger-icon {
   background-image: url(images/hamburger.svg);
   background-size: contain;
@@ -229,22 +260,45 @@ nav.open-house::before {
 nav.open-house ul {
   display: none;
 }
-nav ul {
+nav .main-menu {
   position: relative;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-nav ul li {
-  margin: 15px 0 15px 0;
-  font-size: 50px;
+nav .main-menu > li {
+  position: relative;
+  margin: 18px 0;
+  font-size: 30px;
+  letter-spacing: 1px;
 }
-nav ul li a {
+nav .main-menu > li.with-children .toggle {
+  position: relative;
+  top: -1px;
+  color: var(--white);
+  padding-left: 20px;
+  cursor: pointer;
+}
+nav .main-menu > li a {
   color: white;
   transition: color 0.3s;
 }
-nav ul li a:hover {
+nav .main-menu > li a:hover {
   color: var(--primary);
+}
+nav .main-menu .inner-dropdown {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+nav .main-menu .inner-dropdown li {
+  margin: 10px 0;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+nav .main-menu .inner-dropdown li > a::before {
+  content: "-";
+  padding-right: 8px;
 }
 
 .house-modal {
