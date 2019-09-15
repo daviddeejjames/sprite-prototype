@@ -49,6 +49,7 @@ ul {
 
 .disclaimer {
   position: fixed;
+  box-sizing: border-box;
   top: 0;
   width: 100%;
   display: none;
