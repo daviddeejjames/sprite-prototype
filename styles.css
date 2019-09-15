@@ -23,6 +23,7 @@ body a {
 ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .loading-screen {
@@ -265,6 +266,8 @@ nav .main-menu {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  min-width: 420px;
+  max-width: 100%;
 }
 nav .main-menu > li {
   position: relative;
@@ -287,8 +290,6 @@ nav .main-menu > li a:hover {
   color: var(--primary);
 }
 nav .main-menu .inner-dropdown {
-  margin: 0;
-  padding: 0;
   display: none;
 }
 nav .main-menu .inner-dropdown li {

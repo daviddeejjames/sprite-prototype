@@ -82,6 +82,8 @@ nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    min-width: 420px;
+    max-width: 100%;
 
     > li {
       position: relative;
@@ -112,8 +114,6 @@ nav {
     }
     // Submenu
     .inner-dropdown {
-      margin: 0;
-      padding: 0;
       display: none;
 
       li {

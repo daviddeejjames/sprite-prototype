@@ -92,14 +92,15 @@ function toggleNavItemOpen(e) {
   console.log('toggle');
 
   const $this = $(e.target);
+  const itemOpen = 'item-open';
   const parent = $this.parent('.with-children');
-  if(parent.hasClass('item-open')) {
+  if (parent.hasClass(itemOpen)) {
     $this.next('.inner-dropdown').slideUp(400, () => {
-      parent.addClass('item-open');
+      parent.removeClass(itemOpen);
     });
   } else {
     $this.next('.inner-dropdown').slideDown(400, () => {
-      parent.removeClass('item-open');
+      parent.addClass(itemOpen);
     });
   }
 }
