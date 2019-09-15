@@ -19,7 +19,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('images/house_interior_final.png');
+    background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/house_interior_final.png);
 
     .house-attic {
       top: 13px;
@@ -28,7 +28,7 @@
       height: 130px;
 
       &:hover {
-        background-image: url('images/RP_A03_330x130.png');
+        background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A03_330x130.png);
       }
     }
 
@@ -39,7 +39,7 @@
       height: 140px;
 
       &:hover {
-        background-image: url('images/RP_A04_980x140.png');
+        background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A04_980x140.png);
       }
     }
   }
