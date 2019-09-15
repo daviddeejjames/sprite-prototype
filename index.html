@@ -1,36 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sprite Protoype</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/solid.js" integrity="sha384-F4BRNf3onawQt7LDHDJm/hwm3wBtbLIfGk1VSB/3nn3E+7Rox1YpYcKJMsmHBJIl"
-      crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/fontawesome.js" integrity="sha384-treYPdjUrP4rW5q82SnECO7TPVAz4bpas16yuE9F5o7CeBn2YYw1yr5oC8s8Mf8t"
-      crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css?v=1.2.6">
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.6.3/js/solid.js"
+      integrity="sha384-F4BRNf3onawQt7LDHDJm/hwm3wBtbLIfGk1VSB/3nn3E+7Rox1YpYcKJMsmHBJIl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.6.3/js/fontawesome.js"
+      integrity="sha384-treYPdjUrP4rW5q82SnECO7TPVAz4bpas16yuE9F5o7CeBn2YYw1yr5oC8s8Mf8t"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css?v=1.2.6" />
   </head>
   <body>
     <div class="hamburger">
       <label id="hamburger-icon-label">Menu</label>
-      <button class="hamburger-icon" aria-labelledby="hamburger-icon-label"></button>
+      <button
+        class="hamburger-icon"
+        aria-labelledby="hamburger-icon-label"
+      ></button>
     </div>
     <nav>
       <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
+        <li>
+          <a href="https://richardpeterson.com.au/about" target="_blank"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="https://richardpeterson.com.au/life" target="_blank"
+            >Life</a
+          >
+        </li>
+        <li>
+          <a href="https://richardpeterson.com.au/built" target="_blank"
+            >Built</a
+          >
+        </li>
+        <li>
+          <a href="https://richardpeterson.com.au/projects" target="_blank"
+            >Projects</a
+          >
+        </li>
       </ul>
       <div class="house-modal">
         <div class="house-interior">
-          <div class="house-attic sprite" data-sprite-rows="1" data-sprite-length="24"></div>
-          <div class="house-pizza-hut-roof sprite" data-sprite-rows="8" data-sprite-length="48"></div>
-          <div class="house-bottom-left sprite" data-sprite-rows="2" data-sprite-length="48"></div>
-          <div class="house-bottom-middle sprite" data-sprite-rows="1" data-sprite-length="24"></div>
-          <div class="house-bottom-right sprite" data-sprite-rows="2" data-sprite-length="48"></div>
-      <!-- SPRITES HERE -->
+          <div
+            class="house-attic sprite"
+            data-sprite-rows="1"
+            data-sprite-length="24"
+          ></div>
+          <div
+            class="house-pizza-hut-roof sprite"
+            data-sprite-rows="8"
+            data-sprite-length="48"
+          ></div>
+          <div
+            class="house-bottom-left sprite"
+            data-sprite-rows="2"
+            data-sprite-length="48"
+          ></div>
+          <div
+            class="house-bottom-middle sprite"
+            data-sprite-rows="1"
+            data-sprite-length="24"
+          ></div>
+          <div
+            class="house-bottom-right sprite"
+            data-sprite-rows="2"
+            data-sprite-length="48"
+          ></div>
+          <!-- SPRITES HERE -->
         </div>
         <button class="back-button">Back to scene</button>
       </div>
@@ -42,77 +89,171 @@
     <div class="main-landscape background">
       <div class="audio-wrapper">
         <audio id="audio-player" loop muted>
-          <source src="https://s3-ap-southeast-2.amazonaws.com/dev-sprites/sounds.mp3">
+          <source
+            src="https://s3-ap-southeast-2.amazonaws.com/dev-sprites/sounds.mp3"
+          />
         </audio>
-        <button
-          class="mute-button muted"
-          onclick="toggleMute()">
+        <button class="mute-button muted" onclick="toggleMute()">
           <i class="fas fa-volume-up"></i>
           <i class="fas fa-volume-mute"></i>
         </button>
       </div>
       <!-- Sky/flying -->
-      <a href="http://richardpeterson.com.au/a-place-of-sensuous-resort" target="_blank">
+      <a
+        href="https://richardpeterson.com.au/a-place-of-sensuous-resort"
+        target="_blank"
+      >
         <div class="luna-park static"></div>
       </a>
-      <div class="fireworks sprite" data-sprite-rows="1" data-sprite-length="30"></div>
-      <div class="bird sprite" data-sprite-rows="1" data-sprite-length="30"></div>
-      <a href="http://richardpeterson.com.au/brimstone-to-bunyip" target="_blank">
+      <div
+        class="fireworks sprite"
+        data-sprite-rows="1"
+        data-sprite-length="30"
+      ></div>
+      <div
+        class="bird sprite"
+        data-sprite-rows="1"
+        data-sprite-length="30"
+      ></div>
+      <a
+        href="https://richardpeterson.com.au/brimstone-to-bunyip"
+        target="_blank"
+      >
         <div class="lumpy-tower static"></div>
       </a>
-      <a href="http://richardpeterson.com.au/cv" target="_blank">
-        <div class="balloon sprite" data-sprite-rows="2" data-sprite-length="80"></div>
+      <a href="https://richardpeterson.com.au/cv" target="_blank">
+        <div
+          class="balloon sprite"
+          data-sprite-rows="2"
+          data-sprite-length="80"
+        ></div>
       </a>
-      <a href="http://richardpeterson.com.au/blog" target="_blank">
-        <div class="kookaburra sprite" data-sprite-rows="1" data-sprite-length="20"></div>
+      <a href="https://richardpeterson.com.au/blog" target="_blank">
+        <div
+          class="kookaburra sprite"
+          data-sprite-rows="1"
+          data-sprite-length="20"
+        ></div>
       </a>
-      <a href="http://richardpeterson.com.au/touring-architecture" target="_blank">
-        <div class="plane sprite" data-sprite-rows="1" data-sprite-length="19"></div>
+      <a
+        href="https://richardpeterson.com.au/touring-architecture"
+        target="_blank"
+      >
+        <div
+          class="plane sprite"
+          data-sprite-rows="1"
+          data-sprite-length="19"
+        ></div>
       </a>
       <!-- Midground -->
-      <div class="mailbox-letter sprite" data-sprite-rows="1" data-sprite-length="50"></div>
-      <div class="people sprite" data-sprite-rows="1" data-sprite-length="28"></div>
-      <a href="http://richardpeterson.com.au/1-wystish" target="_blank">
-        <div class="drippy-roof sprite" data-sprite-rows="1" data-sprite-length="24"></div>
+      <div
+        class="mailbox-letter sprite"
+        data-sprite-rows="1"
+        data-sprite-length="50"
+      ></div>
+      <div
+        class="people sprite"
+        data-sprite-rows="1"
+        data-sprite-length="28"
+      ></div>
+      <a href="https://richardpeterson.com.au/1-wystish" target="_blank">
+        <div
+          class="drippy-roof sprite"
+          data-sprite-rows="1"
+          data-sprite-length="24"
+        ></div>
       </a>
       <div class="house-button static"></div>
-      <a href="http://richardpeterson.com.au/talks-to-the-heildelberg-historical-society" target="_blank">
+      <a
+        href="https://richardpeterson.com.au/talks-to-the-heildelberg-historical-society"
+        target="_blank"
+      >
         <div class="candy-cane static"></div>
       </a>
-      <a href="http://richardpeterson.com.au/2-sunbury-clock" target="_blank">
-        <div class="clocktower sprite" data-sprite-rows="1" data-sprite-length="48"></div>
+      <a href="https://richardpeterson.com.au/2-sunbury-clock" target="_blank">
+        <div
+          class="clocktower sprite"
+          data-sprite-rows="1"
+          data-sprite-length="48"
+        ></div>
       </a>
       <a href="https://youtu.be/yZUMUEMkqt4" target="_blank">
-        <div class="bonfire sprite" data-sprite-rows="1" data-sprite-length="18"></div>
+        <div
+          class="bonfire sprite"
+          data-sprite-rows="1"
+          data-sprite-length="18"
+        ></div>
       </a>
       <div class="bottle-top static"></div>
       <!-- Bookmarks -->
-      <a href="http://richardpeterson.com.au/about" target="_blank">
-        <div class="looseleaf sprite" data-sprite-rows="1" data-sprite-length="21"></div>
+      <a href="https://richardpeterson.com.au/about" target="_blank">
+        <div
+          class="looseleaf sprite"
+          data-sprite-rows="1"
+          data-sprite-length="21"
+        ></div>
       </a>
-      <a href="http://richardpeterson.com.au/lectures" target="_blank">
-        <div class="red-bookmark sprite" data-sprite-rows="1" data-sprite-length="15"></div>
+      <a href="https://richardpeterson.com.au/lectures" target="_blank">
+        <div
+          class="red-bookmark sprite"
+          data-sprite-rows="1"
+          data-sprite-length="15"
+        ></div>
       </a>
-      <a href="http://richardpeterson.com.au/built" target="_blank">
-        <div class="green-bookmark sprite" data-sprite-rows="1" data-sprite-length="18"></div>
+      <a href="https://richardpeterson.com.au/built" target="_blank">
+        <div
+          class="green-bookmark sprite"
+          data-sprite-rows="1"
+          data-sprite-length="18"
+        ></div>
       </a>
-      <a href="http://richardpeterson.com.au/significant-books" target="_blank">
-        <div class="blue-bookmark sprite" data-sprite-rows="1" data-sprite-length="18"></div>
+      <a
+        href="https://richardpeterson.com.au/significant-books"
+        target="_blank"
+      >
+        <div
+          class="blue-bookmark sprite"
+          data-sprite-rows="1"
+          data-sprite-length="18"
+        ></div>
       </a>
-      <a href="http://richardpeterson.com.au/life" target="_blank">
-        <div class="orange-bookmark sprite" data-sprite-rows="1" data-sprite-length="18"></div>
+      <a href="https://richardpeterson.com.au/life" target="_blank">
+        <div
+          class="orange-bookmark sprite"
+          data-sprite-rows="1"
+          data-sprite-length="18"
+        ></div>
       </a>
-      <a href="http://richardpeterson.com.au/touring-architecture" target="_blank">
-        <div class="ribbon sprite" data-sprite-rows="1" data-sprite-length="15"></div>
+      <a
+        href="https://richardpeterson.com.au/touring-architecture"
+        target="_blank"
+      >
+        <div
+          class="ribbon sprite"
+          data-sprite-rows="1"
+          data-sprite-length="15"
+        ></div>
       </a>
-      <a href="http://richardpeterson.com.au/dictionary" target="_blank">
-        <div class="yellow-bookmark sprite" data-sprite-rows="1" data-sprite-length="15"></div>
+      <a href="https://richardpeterson.com.au/dictionary" target="_blank">
+        <div
+          class="yellow-bookmark sprite"
+          data-sprite-rows="1"
+          data-sprite-length="15"
+        ></div>
       </a>
-      <a href="http://richardpeterson.com.au/contact" target="_blank">
-        <div class="red-rope sprite" data-sprite-rows="1" data-sprite-length="15"></div>
+      <a href="https://richardpeterson.com.au/contact" target="_blank">
+        <div
+          class="red-rope sprite"
+          data-sprite-rows="1"
+          data-sprite-length="15"
+        ></div>
       </a>
-      <a href="http://richardpeterson.com.au/publications" target="_blank">
-        <div class="blue-tab sprite" data-sprite-rows="1" data-sprite-length="15"></div>
+      <a href="https://richardpeterson.com.au/publications" target="_blank">
+        <div
+          class="blue-tab sprite"
+          data-sprite-rows="1"
+          data-sprite-length="15"
+        ></div>
       </a>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
