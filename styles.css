@@ -12,6 +12,7 @@ body {
   background-color: var(--white);
   display: flex;
   min-height: 100vh;
+  max-width: 1920px;
   overflow-y: hidden;
   overflow-x: scroll;
   position: relative;
@@ -432,7 +433,7 @@ nav .main-menu .inner-dropdown li > a::before {
   left: 387px;
   width: 120px;
   height: 200px;
-  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/RP_A11_120x200_V01.png);
+  background-image: url(https://s3-ap-southeast-2.amazonaws.com/dev-sprites/bird+popping.png);
 }
 
 .lumpy-tower {
