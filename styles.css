@@ -200,7 +200,7 @@ ul {
   }
 }
 .hamburger {
-  position: fixed;
+  position: absolute;
   will-change: transform;
   top: 40px;
   right: 40px;

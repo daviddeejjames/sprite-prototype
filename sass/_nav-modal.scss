@@ -1,5 +1,5 @@
 .hamburger {
-  position: fixed;
+  position: absolute;
   will-change: transform;
   top: 40px;
   right: 40px;
@@ -92,7 +92,6 @@ nav {
       letter-spacing: 1px;
 
       &.with-children {
-
         .toggle {
           position: relative;
           top: -1px;
